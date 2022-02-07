@@ -1,0 +1,18 @@
+extends _base
+
+block content
+  h1="View Orders"
+  table(class="orderTable")
+    tr
+      th="OrderNo"
+      th="Product"
+      th="Quantity"
+      th="Company"
+
+    each order,index in orders
+      tr
+        td=index+1
+        td=order.product
+        td=order.quantity
+        td=order.company
+

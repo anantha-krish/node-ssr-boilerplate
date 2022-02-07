@@ -1,0 +1,12 @@
+extends _base
+
+block content
+  h1 Add Order
+  form
+    label(for="product")="Product Name"  
+    input(type="text" id="product" name="product")
+    label(for="quantity")="Quantity"  
+    input(type="number" id="quantity" name="quantity")
+    label(for="company")="Company Name"  
+    input(type="text" id="company" name="company")
+    input(type="submit" id="addOrder" value="Add Order")
